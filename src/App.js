@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles/global.scss";
+import "./styles/variables.scss";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <section className="section">
+      <figure className="figure">
+        <img className="img" src="/images/image-equilibrium.jpg" />
+        <img className="view" src="/images/icon-view.svg" />
+      </figure>
+
+      <h1 className="title">Equilibrium #3429</h1>
+
+      <p className="paragraph">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+
+      <section className="priceAndDay">
+        <p className="price">0.041 ETH</p>
+
+        <p className="day">
+          <img className="clock" src="/images/icon-clock.svg" /> 3 days left
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      </section>
+
+      <hr className="line" />
+      <section className="creator">
+        <img className="imgCreator" src="/images/image-avatar.png" />
+        <p className="nameCreator">
+          Creation of <span className="span">Jules Wyvern</span>
+        </p>
+      </section>
+    </section>
   );
 }
 
